@@ -35,5 +35,32 @@
     - Azure Databricks: Datalake ( analyst spark, hadoop)
     - Azure HDInsight: it can be a suitable option if your analytics solution relies on multiple open-source frameworks or if you need to migrate an existing on-premises Hadoop-based solution to the cloud.(分析ソリューションが複数のオープンソース フレームワークに依存している場合、または既存のオンプレミスの Hadoop ベースのソリューションをクラウドに移行する必要がある場合に適したオプションです。)
 9. Explore fundamentals of real-time analytics
-    - Batch processing, in which multiple data records are collected and stored before being processed together in a single operation. (複数のデータ レコードが収集され、1 回の操作でまとめて処理される前に保存されます。)
+    - Batch processing, in which multiple data records are collected and stored before being processed together in a single operation. (複数のデータ レコードが収集され、1 回の操作でまとめて処理して、保存されます。)
+            - best for large write
+            - high latency(高レイテンシ)
     - Stream processing, in which a source of data is constantly monitored and processed in real time as new data events occur.(新しいデータ イベントが発生すると、データ ソースが常に監視され、リアルタイムで処理されます。)
+            - 遅延が遅い
+            - Real time.
+            - tool: Azure Stream Analytics, Azure IoT Hub, Azure Event Hubs, Apache Kafka:
+10. Explore fundamentals of data visualization
+    - Microsoft Power BI :データ視覚化(しかくか)を構築するために使用できるツールです。
+    - Analytical modeling in Microsoft Power BI
+        - Tables and text
+        - Bar and column charts
+        - Line charts
+        - Pie charts
+        - Scatter plots.
+        - Maps
+    - Interactive reports in Power BI
+        - ![image](https://user-images.githubusercontent.com/44230257/197465819-1f8b912f-1305-41dc-9762-8a409d75d0f0.png)
+
+11. BI Practice
+    - Data: 
+        - https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/customers.csv
+        - https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/products.csv
+        - https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/orders.csv
+    - Importすると
+    - ![image](https://user-images.githubusercontent.com/44230257/197466146-16ac4831-d39c-4767-813f-c555bdb98732.png)
+    - ![image](https://user-images.githubusercontent.com/44230257/197466196-302281b7-2031-4e64-8110-b1f2839dc0c0.png)
+    - Visualization（視覚化）しかくか
+    - ![image](https://user-images.githubusercontent.com/44230257/197466321-698c8f66-4cce-4936-a39b-3e78b63e4ea0.png)
