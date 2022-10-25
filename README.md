@@ -1,6 +1,6 @@
 # Microsoft-Azure-Data-Fundamentals
 1. Explore core data concepts
-    - Explore file storage : Delimited text files, JSON,XML, BLOB
+    - Explore file storage:
         - Delimited text files : CSV
         - JSON, XML : semi-structure
         - BLOB: binari data ( like images, video)
@@ -34,9 +34,11 @@
     - Data analysts : crate visulization, chart to make true decesions.
 3. Data service
     - Azure Cosmos DB : no-sql
+        - Cosmos DATABASE Core API : for sql query to Cosmo database 
+        - Cosmos db gremlin api : structure by graph database.
     - Azure Data Factory: to build extract, transform, and load (ETL) 
-    - Azure Synapse Analytics : make pipeline, sql, spark..
-    - Azure Databricks :  create analytical data
+    - Azure Synapse Analytics : Warehouse: make analyst pipeline, sql, spark..
+    - Azure Databricks :  create analytical data, intergrate open-source, implement hadoop.
     - Azure HDInsight : hadoop. large data
     - Microsoft Power BI : visualizations
 4. Relational data in azure
@@ -44,13 +46,13 @@
 6. Explore data analyst in azure
     - warehousing architecture : ELT
     - data ingestion pipelines 
-        -  Azure Blob Store linked service to ingest the input dataset, 
-        -  Azure SQL Database: データ分析
+        - Azure Blob Store linked service to ingest the input dataset, 
+        - Azure SQL Database: データ分析
         - Azure Databricks(is analyst tool, Azure Databricks cleans and transforms structureless data sets) or Azure HDInsight, or apply custom logic using an Azure Function. 
         - Output data to datawarehouse, such as Azure Synapse Analytics. 
 7. Data stores
-    - Data warehouses : A data warehouse is a relational database in which the data is stored in a schema that is optimized for data analytics rather than transactional workloads.(データ ウェアハウスは、トランザクション ワークロードではなくデータ分析用に最適化されたスキーマにデータが格納されるリレーショナル データベースです。)
-    - Data lakes: A data lake is a file store, usually on a distributed file system for high performance data access. Technologies like Spark or Hadoop are often used to process queries on the stored files and return data for reporting and analytics (データ レイクはファイル ストアであり、通常は高性能データ アクセス用の分散ファイル システム上にあります。 Spark や Hadoop などのテクノロジは、保存されたファイルに対するクエリを処理し、レポートや分析用のデータを返すためによく使用されます。)
+    - Data warehouses(Synapse analyst) : A data warehouse is a relational database in which the data is stored in a schema that is optimized for data analytics rather than transactional workloads.(データ ウェアハウスは、トランザクション ワークロードではなくデータ分析用に最適化されたスキーマにデータが格納されるリレーショナル データベースです。)
+    - Data lakes(Azure Data Lake Storage Gen1,gen2): A data lake is a file store, usually on a distributed file system for high performance data access. Technologies like Spark or Hadoop are often used to process queries on the stored files and return data for reporting and analytics (データ レイクはファイル ストアであり、通常は高性能データ アクセス用の分散ファイル システム上にあります。 Spark や Hadoop などのテクノロジは、保存されたファイルに対するクエリを処理し、レポートや分析用のデータを返すためによく使用されます。)
     
 8. Azure services for analytical stores
     - Azure Sysnapse Analystic: datawarehouse
