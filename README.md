@@ -1,11 +1,33 @@
 # Microsoft-Azure-Data-Fundamentals
 1. Explore core data concepts
     - Explore file storage : Delimited text files, JSON,XML, BLOB
-    - Common data format
-    - Store data in database : relation, no-sql
+        - Delimited text files : CSV
+        - JSON, XML : semi-structure
+        - BLOB: binari data ( like images, video)
+    - Common database propertiesss
+        - a stored procudure: block of code run sql
+        - a view: virtual table by predefine specified sql
+        - an index : sort data, faster query.
+    - Store data in database : 
+        - relation : tablur view ( column and view ) . perfomance for write
+        - no-sql : performance for lookup.
+        - graph database: nodes and edge. 
+        - document database: online defined structure.
+        - Normalizing : performance for write, much more join, elimilate duplicate.
+        - Denormalizing : performance for read, duplicate data
+    - Property of transaction workload
+        - atomicity: success for all entities, or roll back all
+        - isolation: đọc lập
+        - durability: bền bỉ,　elasticity.
+        - consistency: nhất quán, like pipeline. consistency data.
     - Explore analytical data processing : Datalake -> データ処理（ELT、ETL） -> analyst (by load data form dataware house)
         + ETL transforms data on a separate processing server, while ELT transforms data within the data warehouse itself.(ETL は別の処理サーバーでデータを変換しますが、ELT はデータ ウェアハウス自体の中でデータを変換します。)
         + ETL does not transfer raw data into the data warehouse, while ELT sends raw data directly to the data warehouse.(ETL は生データをデータ ウェアハウスに転送しませんが、ELT は生データをデータ ウェアハウスに直接送信します。)
+    - Data analyst type
+        - Cognitive : Detect image, voice..vvv..
+        - Diagnostic : why dis occure
+        - Descritive : description
+        - Precritive : make the rule for create, structure
 2. Explore job roles in data
     - Database administrators manage databases, bakcup, restore.
     - Data engineers: pipelinr, clean data, make rule
@@ -42,6 +64,11 @@
             - 遅延が遅い
             - Real time.
             - tool: Azure Stream Analytics, Azure IoT Hub, Azure Event Hubs, Apache Kafka:
+    - Online Analystical Processing (OLAP) : real time, like counnt mount of people use service
+    - Online transactin Provessing(OLTP) : like e-commer site, bank at,..
+        - relation database  (SQL)
+        - best for write
+        - Normalization
 10. Explore fundamentals of data visualization
     - Microsoft Power BI :データ視覚化(しかくか)を構築するために使用できるツールです。
     - Analytical modeling in Microsoft Power BI
@@ -64,3 +91,7 @@
     - ![image](https://user-images.githubusercontent.com/44230257/197466196-302281b7-2031-4e64-8110-b1f2839dc0c0.png)
     - Visualization（視覚化）しかくか
     - ![image](https://user-images.githubusercontent.com/44230257/197466321-698c8f66-4cce-4936-a39b-3e78b63e4ea0.png)
+
+
+Certification : 2022/10/25
+![image](https://user-images.githubusercontent.com/44230257/197666931-7e8f8db8-f85a-4f9e-bf81-1d5a79d39719.png)
